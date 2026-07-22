@@ -5,21 +5,21 @@
 class D4s < Formula
   desc "Master Docker like a pro, right from your terminal"
   homepage "https://d4scli.io"
-  version "0.49.103"
+  version "0.49.104"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jr-k/d4s/releases/download/v0.49.103/d4s_0.49.103_darwin_amd64.tar.gz"
-      sha256 "6fd79c1dfcb603eb57cfacc38e5bac2071c304ffcc800d79fb94409df1bf541c"
+      url "https://github.com/jr-k/d4s/releases/download/v0.49.104/d4s_0.49.104_darwin_amd64.tar.gz"
+      sha256 "57837c2b4d5dd5bbd20f0f331ad81c7ccb3b009e6de4895e090d6e0698c990ca"
 
       define_method(:install) do
         bin.install "d4s"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jr-k/d4s/releases/download/v0.49.103/d4s_0.49.103_darwin_arm64.tar.gz"
-      sha256 "d1d4f04cbdf07d15987cbf26efc98368aa47d9731b1ec72c679f25894db778c5"
+      url "https://github.com/jr-k/d4s/releases/download/v0.49.104/d4s_0.49.104_darwin_arm64.tar.gz"
+      sha256 "3b87da173bd8eda529dcead5e22a46f5c4629ee0ff78181d17f1ffd1d52e986c"
 
       define_method(:install) do
         bin.install "d4s"
@@ -29,22 +29,22 @@ class D4s < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jr-k/d4s/releases/download/v0.49.103/d4s_0.49.103_linux_amd64.tar.gz"
-      sha256 "a289c3096e769d736c3da429e82cdff04d8309059cdc27eb57156627f26c91f8"
+      url "https://github.com/jr-k/d4s/releases/download/v0.49.104/d4s_0.49.104_linux_amd64.tar.gz"
+      sha256 "72158b2d45f44a4d6110fc8a241053f5b74ddeec937a21069dc10dc24d4a4d77"
       define_method(:install) do
         bin.install "d4s"
       end
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/jr-k/d4s/releases/download/v0.49.103/d4s_0.49.103_linux_armv6.tar.gz"
-      sha256 "ea79e94ed519a40a13b1396f4dbfce89a536d84a80106386f3c722de0d2ab535"
+      url "https://github.com/jr-k/d4s/releases/download/v0.49.104/d4s_0.49.104_linux_armv6.tar.gz"
+      sha256 "8da06fd84d348cf81bc4f16be6be4eec773838d8caf0d909f0775b37fcefd584"
       define_method(:install) do
         bin.install "d4s"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jr-k/d4s/releases/download/v0.49.103/d4s_0.49.103_linux_arm64.tar.gz"
-      sha256 "3563b156639095353ec5f21f5434da21797ffa352b950fd3dc83aa536ab47330"
+      url "https://github.com/jr-k/d4s/releases/download/v0.49.104/d4s_0.49.104_linux_arm64.tar.gz"
+      sha256 "372df7864274f7da8bf3c527c3b15b66bcbbcb9375bb57cdb6835c14bf912b60"
       define_method(:install) do
         bin.install "d4s"
       end
